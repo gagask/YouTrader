@@ -63,6 +63,16 @@ class ProfileFragment : BaseFragment(R.layout.profile_fragment) {
                     }
                 }
             }
+
+            switchPinCode.setOnCheckedChangeListener { buttonView, isChecked ->
+                if (isChecked) {
+                    //TODO Включить вход по PIN
+                    viewModel.navigateToPinRegFragment()
+                } else {
+                    //TODO Выключить вход по PIN
+
+                }
+            }
         }
     }
 
